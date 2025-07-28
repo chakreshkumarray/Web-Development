@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    overflow: hidden;
+    height: 100vh;
+    cursor: none;
+}
+
+.game-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.score-display {
+    font-size: 1.5em;
+    margin: 15px 0;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px 30px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    display: inline-block;
+}
+
+#start-btn {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#start-btn:hover {
+    transform: scale(1.05);
+}
+
+.game-area {
+    position: relative;
+    flex: 1;
+    background: linear-gradient(180deg, #0f0f23, #2d1b69);
+    overflow: hidden;
+}
+
+.basket {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 4em;
+    user-select: none;
+    transition: left 0.1s ease;
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+    z-index: 10;
+}
+
+.star {
+    position: absolute;
+    font-size: 2.5em;
+    animation: fall linear;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px #ffd700);
+    z-index: 5;
+}
+
+@keyframes fall {
+    from {
+        top: -50px;
+        transform: rotate(0deg);
+    }
+    to {
+        top: 100vh;
+        transform: rotate(720deg);
+    }
+}
+
+.star:hover {
+    filter: drop-shadow(0 0 20px #ffd700);
+    transform: scale(1.3);
+}
+
+.controls {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.collected-star {
+    animation: collect 0.6s ease-out;
+}
+
+@keyframes collect {
+    0% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2.5) rotate(180deg);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(0) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Sky background effect */
+.game-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background: linear-gradient(180deg, 
+        rgba(135, 206, 235, 0.3) 0%, 
+        rgba(25, 25, 112, 0.2) 50%, 
+        transparent 100%);
+    pointer-events: none;
+}
+
+/* Add twinkling stars in background */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 1; }
+}
+
+.background-star {
+    position: absolute;
+    color: white;
+    font-size: 0.8em;
+    animation: twinkle 2s infinite;
+    pointer-events: none;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .basket {
+        font-size: 3em;
+    }
+    
+    .star {
+        font-size: 2em;
+    }
+    
+    .score-display {
+        font-size: 1.3em;
+        padding: 10px 20px;
+    }
+}
+
+/* Custom cursor for game area */
+.game-area {
+    cursor: crosshair;
+}
