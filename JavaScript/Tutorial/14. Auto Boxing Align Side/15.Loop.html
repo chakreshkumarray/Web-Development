@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loop</title>
+</head>
+<body>
+  <script>
+   // While loop
+  let n=1;         //Initialization
+  while(n<=10)     //Condition
+ {
+  console.log(n ,'kumar');
+  n=n+1; // n++;  // updatation
+ }
+ console.log('final value of n:'+n);
+
+   // For Loop 
+
+    for(i=1;i<=9;i++)
+  {
+    console.log('Chakresh kumar');
+  }
+  console.log('Total value of i:'+i);
+
+  // Do-While Loop
+  let x=0; //initilzation
+  do{
+      console.log(x,'ray')
+      x++;                    //updation
+  }
+  while(n<=5)               // condition
+
+  //for Loop
+
+  for(y=1;y<=7;y++)
+  {
+  console.log(y);
+  console.log(y,'ck');
+  console.log('value of y is :',+y);
+  console.log('chakresh kumar ray');
+  }
+
+
+  //used in array
+  let arr=[23,25,52,88,76,78,56];
+  for(let j=0;j<=6;j++)
+  {
+    console.log(arr[j]);
+  }
+
+  // OR
+  let arr1=[23,25,52,88,76,78,56,47,89,76];
+  for(let k=0;k<arr1.length;k++)                       //logic
+  {
+    console.log(arr[k]);
+    console.log('value of :'+arr1);
+  }
+
+  // Accumulator in loop used by array 
+
+  let arr2=[45,26,67,17,84,90,27,44,78,]
+  let sum=0;
+  for(let l=0; l<arr2.length;l++)
+  {
+    sum=sum+arr2[l];
+    console.log(arr2[l])
+    
+    
+  }
+  console.log(sum)
+  console.log('sum of the array'+sum)
+
+  // print Square  of array
+
+  let Square=[];
+  for(let l=0; l<arr2.length;l++)
+  { 
+  
+    Square.push(arr2[l]*arr2[l]);
+    //OR
+    Square[l]= arr2[l]*arr2[l];
+  }
+  console.log(Square);
+  </script>
+</body>
+</html>
