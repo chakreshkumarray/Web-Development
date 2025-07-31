@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta name="description" content="A very big HTML5 example covering almost all tags and attributes" />
+  <meta name="author" content="Perplexity AI" />
+  <meta name="robots" content="index, follow" />
+  <title>All-HTML-Tags Showcase</title>
+  <base href="/" target="_blank" />
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #fafbfc; }
+    header, footer { background: #e3e9f2; padding: 1em 2em; border-radius: 7px; margin-bottom: 1em;}
+    nav ul { display: flex; gap: 2em; list-style: none; padding: 0; }
+    section { margin-bottom: 2em; border-left: 3px solid #6fa3ef; padding-left: 1em; }
+    article {margin-bottom: 1em;}
+    aside {background: #fdffe1; padding: 1em; border-radius: 7px;}
+    mark { background: yellow; }
+    code, kbd, samp { background: #efefef; padding: 0.25em 0.5em; border-radius: 4px; }
+    table, th, td { border: 1px solid #999; border-collapse: collapse; padding: 0.25em 0.5em;}
+    details[open] summary {font-weight: bold;}
+    .visually-hidden{position:absolute;left:-9999px;}
+  </style>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="stylesheet" href="styles.css" media="all" />
+  <script>
+    // Just for demonstration: script tag usage
+    function showAlert() {
+      alert('Button clicked!');
+    }
+  </script>
+</head>
+<body data-theme="light" aria-label="All HTML Elements Example">
+
+  <header role="banner">
+    <h1>🌐 All-HTML-Tags Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#semantics">Semantics</a></li>
+        <li><a href="#lists">Lists</a></li>
+        <li><a href="#forms">Forms</a></li>
+        <li><a href="#media">Media</a></li>
+        <li><a href="#table">Tables</a></li>
+        <li><a href="#inline">Inline & Text</a></li>
+        <li><a href="#embed">Embed/Objects</a></li>
+        <li><a href="#scripting">Scripting</a></li>
+        <li><a href="#obsolete">Obsolete</a></li>
+      </ul>
+    </nav>
+    <p><mark>This page displays as many diverse HTML tags as practical for learning purposes 🧑‍🎓</mark></p>
+  </header>
+
+  <main>
+    <!-- Semantics -->
+    <section id="semantics" aria-labelledby="semantics-heading">
+      <h2 id="semantics-heading">Semantic Elements</h2>
+      <article>
+        <header>
+          <h3>Article Heading</h3>
+          <address>By HTML Enthusiast, on <time datetime="2024-06-01T16:20">June 1, 2024</time></address>
+        </header>
+        <p>HTML5 introduced <strong>semantic elements</strong> to describe document structure.</p>
+        <aside>
+          <details open>
+            <summary>Tip: Why semantics matter?</summary>
+            <p>Semantic HTML helps robots and screen readers understand your content!</p>
+          </details>
+        </aside>
+        <figure>
+          <img src="https://picsum.photos/150/100" alt="Random example" loading="lazy" width="150" height="100" />
+          <figcaption>Fig.1: Sample image with figure and figcaption.</figcaption>
+        </figure>
+        <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
+          "The <code>&lt;blockquote&gt;</code> element represents content that is quoted from another source."
+        </blockquote>
+      </article>
+    </section>
+    <!-- Lists -->
+    <section id="lists">
+      <h2>List Elements</h2>
+      <ol start="5" reversed>
+        <li>Ordered List item 1</li>
+        <li>Ordered List item 2</li>
+      </ol>
+      <ul type="circle">
+        <li>Unordered List item A</li>
+        <li>Unordered List item B</li>
+      </ul>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+      <menu type="toolbar">
+        <li><button onclick="showAlert()" type="button">Menu Button</button></li>
+      </menu>
+    </section>
+    <!-- Forms & Inputs -->
+    <section id="forms">
+      <h2>Forms & Input Fields</h2>
+      <form action="#" method="POST" autocomplete="on" novalidate>
+        <fieldset>
+          <legend>User Info</legend>
+          <label for="username">Text:</label>
+          <input type="text" id="username" name="username" minlength="3" maxlength="12" required autofocus /><br/>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="user@example.com" required /><br/>
+
+          <label for="pwd">Password:</label>
+          <input type="password" id="pwd" name="pwd" autocomplete="current-password" /><br/>
+
+          <label>
+            <input type="checkbox" name="check1" checked disabled />
+            Accept Terms
+          </label><br/>
+
+          <label for="birthdate">Date:</label>
+          <input type="date" id="birthdate" name="birthdate" /><br/>
+
+          <label for="color">Color:</label>
+          <input type="color" id="color" name="color" value="#ff0000" /><br/>
+
+          <label for="num">Number:</label>
+          <input type="number" id="num" name="num" min="1" max="10" step="1" /><br/>
+
+          <label for="range">Range:</label>
+          <input type="range" id="range" name="range" min="0" max="100" value="50" /><br/>
+
+          <label for="file">File:</label>
+          <input type="file" id="file" name="file" multiple/><br/>
+
+          <label for="phone">Tel:</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" /><br/>
+
+          <label for="search">Search:</label>
+          <input type="search" id="search" name="search" /><br/>
+
+          <label for="time">Time:</label>
+          <input type="time" id="time" name="time" /><br/>
+
+          <label for="favfruit">Datalist:</label>
+          <input list="fruits" id="favfruit" name="favfruit" />
+          <datalist id="fruits">
+            <option value="Apple"/>
+            <option value="Banana"/>
+            <option value="Cherry"/>
+          </datalist><br/>
+
+          <label for="textarea">Textarea:</label>
+          <textarea id="textarea" rows="2" cols="30" maxlength="100" placeholder="Enter text..."></textarea><br/>
+
+          <label for="select">Select:</label>
+          <select id="select" name="select" multiple>
+            <option value="">--Please choose--</option>
+            <option value="val1" selected disabled>Option 1</option>
+            <optgroup label="Group">
+              <option>Optgroup Option</option>
+            </optgroup>
+          </select><br/>
+
+          <button type="submit" formaction="#forms" formnovalidate>Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+      <output id="output">Output here.</output>
+      <progress value="30" max="100">30%</progress><br/>
+      <meter value="0.4">40%</meter>
+    </section>
+    <!-- Media -->
+    <section id="media">
+      <h2>Media Elements</h2>
+      <img src="https://picsum.photos/140/80" width="140" height="80" alt="Random Image" usemap="#imgmap" decoding="async"/>
+      <map name="imgmap">
+        <area shape="rect" coords="0,0,80,40" href="#semantics" alt="Go to Semantics"/>
+        <area shape="rect" coords="80,40,140,80" href="#forms" alt="Go to Forms"/>
+      </map>
+      <audio controls loop muted preload="none">
+        <source src="audio.mp3" type="audio/mp3" />
+        <source src="audio.ogg" type="audio/ogg" />
+        Audio not supported.
+      </audio>
+      <video controls width="240" height="120" poster="https://picsum.photos/240/120?grayscale" autoplay loop muted>
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+        <track kind="subtitles" srclang="en" label="English" src="subs_en.vtt" default />
+        Your browser does not support the video tag.
+      </video>
+      <picture>
+        <source media="(min-width:800px)" srcset="https://picsum.photos/300/100?random=1"/>
+        <source media="(min-width:400px)" srcset="https://picsum.photos/200/70?random=2"/>
+        <img src="https://picsum.photos/120/45?random=3" alt="Responsive img">
+      </picture>
+      <canvas id="canvas" width="100" height="30"></canvas>
+      <script>
+        // Draw something on the canvas for demonstration
+        let ctx = document.getElementById('canvas').getContext('2d');
+        ctx.fillStyle = "#1e90ff";
+        ctx.fillRect(20, 10, 60, 10);
+      </script>
+      <svg width="80" height="30" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="40" cy="15" r="10" fill="#fd3" stroke="black"/>
+        <text x="35" y="20" font-size="8">SVG</text>
+      </svg>
+      <figcaption>Canvas & SVG demo</figcaption>
+    </section>
+    <!-- Tables -->
+    <section id="table">
+      <h2>Tables</h2>
+      <table>
+        <caption>Sample Table</caption>
+        <colgroup>
+          <col span="1" style="background-color:#def" />
+          <col style="background-color:#fed" />
+        </colgroup>
+        <thead>
+          <tr><th scope="col">Header 1</th><th scope="col">Header 2</th></tr>
+        </thead>
+        <tbody>
+          <tr><td rowspan="2">Rowspan Cell</td><td>Row1 Cell2</td></tr>
+          <tr><td>Row2 Cell2</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="2">Footer row</td></tr>
+        </tfoot>
+      </table>
+    </section>
+    <!-- Inline elements & Text -->
+    <section id="inline">
+      <h2>Inline and Text Elements</h2>
+      <p>This <b>bold</b> and <i>italic</i> <u>underlined</u> <small>small</small> <strong>strong</strong>
+        <em>emphasized</em> <mark>marked</mark> <del>deleted</del> <ins>inserted</ins>
+        <sup>superscript</sup> <sub>subscript</sub> text <q cite="#">inline quote</q>,
+        <abbr title="HyperText Markup Language">HTML</abbr>,
+        <dfn id="html-def">Definition</dfn>,
+        <samp>Sample output</samp>,
+        <kbd>Ctrl+C</kbd>,
+        <var>x</var> = <output>5</output>,
+        <time datetime="15:45">3:45pm</time>,
+        <data value="123">Data</data>,
+        <ruby>漢 <rt>hàn</rt></ruby></p>
+      <p><span class="visually-hidden">Screen reader only text.</span></p>
+      <br/><wbr/><!-- word break opportunity -->
+      <bdo dir="rtl">HTML in RTL direction.</bdo>
+      <bdi>لندن</bdi> <!-- Isolate text direction -->
+      <hr/>
+    </section>
+    <!-- Embeds -->
+    <section id="embed">
+      <h2>Embed/Object/Iframe</h2>
+      <iframe src="https://www.example.com" width="300" height="50" name="exframe" sandbox="allow-scripts allow-same-origin" loading="lazy" allowfullscreen></iframe>
+      <embed src="https://www.w3schools.com/html/mov_bbb.mp4" width="250" height="50" type="video/mp4" />
+      <object data="https://www.w3schools.com/html/html5_video.mp4" width="200" height="40" type="video/mp4">
+        Fallback text for object.
+      </object>
+      <template id="my-template">
+        <p>This is HTML inside a template and will not be rendered until script uses it.</p>
+      </template>
+    </section>
+    <!-- Scripting & meta -->
+    <section id="scripting">
+      <h2>Scripting, Meta & Custom</h2>
+      <script type="application/ld+json">
+        { "@context": "http://schema.org", "@type": "WebPage", "name": "All Tags Demo" }
+      </script>
+      <noscript>Your browser does not support JavaScript!</noscript>
+      <custom-element custom-attribute="hello">This is a custom/unknown HTML tag.</custom-element>
+      <p>Aria and data attributes demo:
+        <span data-custom="abc" aria-label="An example attribute">Hover me!</span>
+      </p>
+      <dialog id="dlg" open>
+        <form method="dialog">
+          <p>Example <mark>dialog</mark>!
+          <menu>
+            <button>OK</button>
+            <button>Cancel</button>
+          </menu>
+        </form>
+      </dialog>
+    </section>
+    <!-- Obsolete & Rare Tags -->
+    <section id="obsolete">
+      <h2>Obsolete/Deprecated/Obscure HTML elements</h2>
+      <p><!-- For legacy experience (do not use in production!) -->
+        <marquee behavior="alternate" direction="right" scrollamount="4" style="color:blue">Obsolete marquee scrolling text</marquee><br/>
+        <center>Deprecated <b>CENTERED</b> text using <code>&lt;center&gt;</code> tag</center>
+        <font face="Comic Sans MS" size="4" color="green">Obsolete font tag</font><br/>
+        <applet code="App.class"></applet> <!-- Very old and not supported -->
+        <acronym title="World Wide Web">WWW</acronym>
+        <big>Big</big>
+        <blink>Obsolete blink</blink>
+      </p>
+      <p>See browser dev tools for <code>&lt;isindex&gt;</code>, <code>&lt;frame&gt;</code>, <code>&lt;frameset&gt;</code> and more, not supported in HTML5.</p>
+    </section>
+  </main>
+  <footer role="contentinfo">
+    <p>&copy; <time datetime="2025-07-31">2025</time> - Huge HTML Example | Powered by <cite>Chakresh Kumar Ray</cite></p>
+    <nav>
+      <a href="#top">Top</a> |
+      <a href="mailto:someone@example.com">Contact</a>
+    </nav>
+  </footer>
+
+</body>
+</html>
