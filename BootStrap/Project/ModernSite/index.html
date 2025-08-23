@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Responsive Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Animate.css for extra animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+  <style>
+    :root {
+      --bs-body-bg: #f8f9fa;
+      --bs-body-color: #333;
+    }
+    body.dark-mode {
+      --bs-body-bg: #212529;
+      --bs-body-color: #f8f9fa;
+      background-color: var(--bs-body-bg);
+      color: var(--bs-body-color);
+    }
+    .dark-mode .card {
+      background-color: #343a40 !important;
+      color: #fff;
+    }
+    .transition {
+      transition: background 0.3s, color 0.3s;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: .5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      transition: transform .2s;
+    }
+    .gallery-img:hover { transform: scale(1.05); }
+    .testimonial-card {
+      background: #f1f3f5;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0,20,40,0.07);
+      border-radius: 1rem;
+    }
+    body.dark-mode .testimonial-card {
+      background: #23272b;
+      color: #fff;
+    }
+    .navbar-brand { font-weight: bold; }
+    .feature-icon {
+      font-size: 2.5rem;
+      margin-bottom: .75rem;
+    }
+    .btn-darkmode {
+      cursor: pointer;
+      font-size: 1.35rem;
+      color: #fff;
+      margin-left: 1rem;
+      background: none;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+<body class="transition">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="#">ModernSite</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNav" aria-controls="navbarNav"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Reviews</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <button class="btn-darkmode ms-3" id="darkModeBtn" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="py-5 bg-light" id="home">
+    <div class="container pt-4 pb-5">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold animate__animated animate__fadeInDown">Build Advanced Responsive Sites</h1>
+          <p class="lead mb-4 animate__animated animate__fadeInLeft">A Bootstrap-powered modern web platform ready for your portfolio, business, SaaS, or blog.</p>
+          <a href="#features" class="btn btn-primary btn-lg shadow animate__animated animate__fadeInUp">Explore Features</a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=500&q=80"
+               alt="Modern Web" class="gallery-img animate__animated animate__fadeInRight">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Features</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon text-primary"><i class="bi bi-lightning-charge-fill"></i></div>
+              <h5 class="card-title">Fast & Reliable</h5>
+              <p class="card-text">Optimized for performance. Caching and speed at every level for the ultimate user experience.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon text-success"><i class="bi bi-display"></i></div>
+              <h5 class="card-title">Responsive Design</h5>
+              <p class="card-text">Flexible layouts for every device. Mobile, tablet, desktop: seamless everywhere with Bootstrap grid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon text-warning"><i class="bi bi-shield-lock"></i></div>
+              <h5 class="card-title">Security First</h5>
+              <p class="card-text">Built with modern web security best practices. Privacy, reliability, and safe performance ensured.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon text-info"><i class="bi bi-vector-pen"></i></div>
+              <h5 class="card-title">Customizable</h5>
+              <p class="card-text">Style and extend to your needs. Theme switching, color palettes, branding and more.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon text-danger"><i class="bi bi-box-arrow-in-right"></i></div>
+              <h5 class="card-title">Easy Integration</h5>
+              <p class="card-text">Connect APIs, backend, databases in minutes. JavaScript and Bootstrap make scaling easy.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card shadow h-100">
+            <div class="card-body">
+              <div class="feature-icon text-secondary"><i class="bi bi-palette"></i></div>
+              <h5 class="card-title">Modern UI</h5>
+              <p class="card-text">Material-inspired cards, icons, transitions, and interactive elements keep users engaged.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Gallery</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=400&q=80"
+               alt="UI Design" class="gallery-img">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80"
+               alt="Database" class="gallery-img">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=400&q=80"
+               alt="Team" class="gallery-img">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=400&q=80"
+               alt="Workspace" class="gallery-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Table -->
+  <section id="pricing" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">Pricing</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <div class="card border-primary shadow">
+            <div class="card-header py-3"><strong>Starter</strong></div>
+            <div class="card-body">
+              <h5 class="card-title">$19/mo</h5>
+              <ul class="list-unstyled">
+                <li>1 User</li>
+                <li>Basic Support</li>
+                <li>Email Integration</li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary w-100">Choose</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border-success shadow">
+            <div class="card-header py-3"><strong>Pro</strong></div>
+            <div class="card-body">
+              <h5 class="card-title">$59/mo</h5>
+              <ul class="list-unstyled">
+                <li>5 Users</li>
+                <li>Priority Support</li>
+                <li>Chat Integration</li>
+              </ul>
+              <a href="#" class="btn btn-outline-success w-100">Choose</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-3">
+          <div class="card border-danger shadow">
+            <div class="card-header py-3"><strong>Enterprise</strong></div>
+            <div class="card-body">
+              <h5 class="card-title">$149/mo</h5>
+              <ul class="list-unstyled">
+                <li>Unlimited Users</li>
+                <li>24/7 Support</li>
+                <li>Custom Solutions</li>
+              </ul>
+              <a href="#" class="btn btn-outline-danger w-100">Choose</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5 fw-bold">What Our Users Say</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card testimonial-card p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle me-3" width="50" alt="User1">
+              <div>
+                <h6 class="mb-0 fw-bold">Alex J.</h6>
+                <small>Entrepreneur</small>
+              </div>
+            </div>
+            <p class="mb-0">“This platform made our launch easy and worry-free. Love the responsive design and rapid support!”</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card testimonial-card p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle me-3" width="50" alt="User2">
+              <div>
+                <h6 class="mb-0 fw-bold">Priya S.</h6>
+                <small>Web Developer</small>
+              </div>
+            </div>
+            <p class="mb-0">“Saves me hours on every project. Customization with Bootstrap is extremely flexible!”</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card testimonial-card p-4">
+            <div class="d-flex align-items-center mb-3">
+              <img src="https://randomuser.me/api/portraits/men/94.jpg" class="rounded-circle me-3" width="50" alt="User3">
+              <div>
+                <h6 class="mb-0 fw-bold">Samuel K.</h6>
+                <small>Designer</small>
+              </div>
+            </div>
+            <p class="mb-0">“Best modern UI toolkit. My clients love the smooth transitions and gallery section.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact" class="py-5">
+    <div class="container py-4">
+      <h2 class="text-center mb-5 fw-bold">Contact Us</h2>
+      <div class="row">
+        <div class="col-lg-7 mx-auto">
+          <div class="card shadow p-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="your@email.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Type your message..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4 mt-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2025 ModernSite | Advanced Responsive Bootstrap Design</p>
+      <div>
+        <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white mx-2"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white mx-2"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS & Interactions -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Dark mode script
+    const btn = document.getElementById('darkModeBtn');
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      btn.querySelector('i').classList.toggle('bi-moon-stars');
+      btn.querySelector('i').classList.toggle('bi-sun');
+    });
+
+    // Animate scroll: smooth anchor scrolling
+    document.querySelectorAll('a.nav-link').forEach(el => {
+      el.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href.startsWith('#')) {
+          e.preventDefault();
+          const section = document.querySelector(href);
+          if (section) {
+            window.scrollTo({ top: section.offsetTop - 54, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    // Contact form validation (demo only)
+    document.querySelector('form').addEventListener('submit', function(evt) {
+      evt.preventDefault();
+      alert('Thank you for contacting us!');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
