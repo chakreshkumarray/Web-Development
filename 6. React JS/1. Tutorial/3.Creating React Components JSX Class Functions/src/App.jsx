@@ -1,6 +1,6 @@
 function App(){
   return <h1>
-    Welcome Chakresh Kumar Ray
+    Welcome Chakresh Kumar
     </h1>
 }
 
