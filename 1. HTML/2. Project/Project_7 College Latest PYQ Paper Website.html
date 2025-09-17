@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website for VBSPU Previous Year Question Papers">
+    <link rel="icon" href="image/logo.png" type="image/png" sizes="50x50">
+    <title>VBSPU I.T PYQ Paper</title>
+    <style>
+        body {
+            background-color: #dcddd6a9; /* Light background color for contrast */
+            font-family: Arial, sans-serif; /* Use a clean, readable font */
+            color: #a7168e; /* Set a default text color */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add some padding */
+            display: flex; /* Use flexbox for layout */
+            flex-direction: column; /* Stack children vertically */
+            height: 100vh; /* Full viewport height */
+        }
+        .background-image {
+            background-image: url("image/logo.png"); /* Change this to your smaller background image */
+            background-size: contain; /* Ensure it scales with the container */
+            background-repeat: no-repeat; 
+            background-position: center; /* Center the background image */
+            opacity: 0.4; /* Set low opacity for subtle effect */
+            position: absolute; /* Position it absolutely */
+            top: 0; 
+            left: 0; 
+            right: 0; 
+            bottom: 0; /* Fill the entire container */
+            z-index: 0; /* Set a low z-index so it's behind other content */
+        }
+        .container {
+            display: flex; /* Use flexbox for the container */
+            flex: 1; /* Allow the container to grow */
+            z-index: 1; /* Ensure content is above the background */
+            position: relative; /* Position relative for z-index */
+            margin-top: 60px; /* Space for centered heading */
+        }
+        .left, .right {
+            flex: 1; /* Each section takes equal space */
+            padding: 20px; /* Add some padding */
+            background-color: rgba(255, 255, 255, 0.8); /* Light background for sections */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+            margin: 10px; /* Add some margin between sections */
+            overflow-y: auto; /* Enable vertical scrolling if content overflows */
+            max-height: 500px; /* Limit the height of each section */
+        }
+        h1 {
+            text-align: center; /* Center align headings */
+            margin: 10px 0; /* Add some margin */
+            padding: 10px; /* Add padding for visual appeal */
+            background-color: rgba(153, 223, 228, 0.8); /* Light background for the heading */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(253, 1, 1, 0.2); /* Subtle shadow for depth */
+            font-size: 2em; /* Increase font size for prominence */
+        }
+        table {
+            width: 100%; /* Make the table full width of the section */
+            border-collapse: collapse; /* Remove spacing between cells */
+            margin: 20px 0; /* Add margin above and below the table */
+            background-color: rgba(75, 185, 24, 0.8); /* Semi-transparent background for contrast */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(8, 243, 204, 0.2); /* Add a subtle shadow */
+        }
+        th, td {
+            padding: 15px; /* Add padding to table cells */
+            text-align: left; /* Align text to the left */
+            border-bottom: 1px solid #bbec07; /* Border between rows */
+        }
+        th {
+            background-color: #f70808d0; /* Light gray background for headers */
+            font-weight: bold; /* Bold header text */
+        }
+        tr:hover {
+            background-color: #220bf5ea; /* Highlight row on hover */
+        }
+        a {
+            color: #2a06f5; /* Link color */
+            text-decoration: none; /* Remove underline from links */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline links on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div> <!-- Background image div -->
+    <h1>Veer Bahadur Singh Purvanchal University Jaunpur</h1> <!-- Centered Main Heading -->
+    <h1>Previous Year Question Papers</h1> <!-- Centered Subheading -->
+    <h1>B.Tech Information Technology (I.T) </h1>
+    <div class="container">
+        <section class="left">
+
+            <!--  First Semester  -->
+
+            <h1>First Semester</h1> 
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Download</th>
+                </tr>
+                <tr>
+                    <td><label for="document1">Physics I</label></td>
+                    <td><a href="subject/CC COMPUTER.pdf" download="CC Computer" id="document1">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document2">Chemistry I</label></td>
+                    <td><a href="subject/CHEMISTRY.pdf" download="Chemistry" id="document2" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document3">Math I</label></td>
+                    <td><a href="subject/MATH_1.pdf" download="Math" id="document3" title="Click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document4">Program for Problem Solving</label></td>
+                    <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document5">Professional English</label></td>
+                    <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+                </tr>
+            </table>
+
+            <!-- Second Semester -->
+
+            <h1>Second Semester</h1>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Download</th>
+                </tr>
+                <tr>
+                    <td><label for="document6">Physics II</label></td>
+                    <td><a href="subject/PHYSICS_II.pdf" download="Physics II" id="document4" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document7">Chemistry II</label></td>
+                    <td><a href="subject/CHEMISTRY_II.pdf" download="Chemistry II" id="document5" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document8">Math II</label></td>
+                    <td><a href="subject/MATH_II.pdf" download="Math II" id="document6" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document9">Basic of Electrical Engineering</label></td>
+                    <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document10">Envinomental Science</label></td>
+                    <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+                </tr>
+            </table>
+
+            <!-- Third Semester -->
+
+            <h1>3rd Semester</h1>
+            <table>
+              <tr>
+                <th>Subject</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td><label for="document11">Electronics Engineering</label></td>
+                <td><a href="subject/PHYSICS_II.pdf" download="Physics II" id="document4" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document12">Univeral Human Values</label></td>
+                <td><a href="subject/CHEMISTRY_II.pdf" download="Chemistry II" id="document5" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document13">Data Structure </label></td>
+                <td><a href="subject/MATH_II.pdf" download="Math II" id="document6" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document14">Computer Organization and Architecture</label></td>
+                <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document15">Discrete Structure Theory And Logic</label></td>
+                <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document16">Computer Systems Security</label></td>
+                <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+            </tr>
+            </table>
+
+            <!-- Fourt Semester -->
+
+            <h1>4th Semester</h1>
+            <table>
+              <tr>
+                <th>Subject</th>
+                <th>Download</th>
+            </tr>
+            <tr>
+                <td><label for="document4">Physics II</label></td>
+                <td><a href="subject/PHYSICS_II.pdf" download="Physics II" id="document4" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document5">Chemistry II</label></td>
+                <td><a href="subject/CHEMISTRY_II.pdf" download="Chemistry II" id="document5" title="click here">Click here</a></td>
+            </tr>
+            <tr>
+                <td><label for="document6">Math II</label></td>
+                <td><a href="subject/MATH_II.pdf" download="Math II" id="document6" title="click here">Click here</a></td>
+            </tr>
+            </table>
+        </section>
+
+        <!-- Right Section -->
+
+        <section class="right">
+
+          <!-- 5th Semester -->
+
+            <h1>5th Semester</h1>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Download</th>
+                </tr>
+                <tr>
+                    <td><label for="document7">Professional English</label></td>
+                    <td><a href="subject/PROFESSIONAL_ENGLISH.pdf" download="Professional English" id="document7" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document8">Data Structures</label></td>
+                    <td><a href="subject/DATA_STRUCTURES.pdf" download="Data Structures" id="document8" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document9">Digital Logic Design</label></td>
+                    <td><a href="subject/DIGITAL_LOGIC_DESIGN.pdf" download="Digital Logic Design" id="document9" title="click here">Click here</a></td>
+                </tr>
+            </table>
+
+            <!-- 6th Semester -->
+
+            <h1>6th Semester</h1>
+            <table>
+                <tr>
+                    <th>Subject</th>
+                    <th>Download</th>
+                </tr>
+                <tr>
+                    <td><label for="document10">Computer Networks</label></td>
+                    <td><a href="subject/COMPUTER_NETWORKS.pdf" download="Computer Networks" id="document10" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document11">Operating Systems</label></td>
+                    <td><a href="subject/OPERATING_SYSTEMS.pdf" download="Operating Systems" id="document11" title="click here">Click here</a></td>
+                </tr>
+                <tr>
+                    <td><label for="document12">Software Engineering</label></td>
+                    <td><a href="subject/SOFTWARE_ENGINEERING.pdf" download="Software Engineering" id="document12" title="click here">Click here</a></td>
+                </tr>
+            </table>
+
+            <!--7th Semester  -->
+
+            <h1>7th Semester</h1>
+            <table>
+            <tr>
+              <th>Subject</th>
+              <th>Download</th>
+          </tr>
+          <tr>
+              <td><label for="document4">Physics II</label></td>
+              <td><a href="subject/PHYSICS_II.pdf" download="Physics II" id="document4" title="click here">Click here</a></td>
+          </tr>
+          <tr>
+              <td><label for="document5">Chemistry II</label></td>
+              <td><a href="subject/CHEMISTRY_II.pdf" download="Chemistry II" id="document5" title="click here">Click here</a></td>
+          </tr>
+          <tr>
+              <td><label for="document6">Math II</label></td>
+              <td><a href="subject/MATH_II.pdf" download="Math II" id="document6" title="click here">Click here</a></td>
+          </tr>
+          </table>
+
+          <!-- 8th Semester -->
+
+          <h1>8th Semester</h1>
+          <table>
+          <tr>
+            <th>Subject</th>
+            <th>Download</th>
+        </tr>
+        <tr>
+            <td><label for="document4">Physics II</label></td>
+            <td><a href="subject/PHYSICS_II.pdf" download="Physics II" id="document4" title="click here">Click here</a></td>
+        </tr>
+        <tr>
+            <td><label for="document5">Chemistry II</label></td>
+            <td><a href="subject/CHEMISTRY_II.pdf" download="Chemistry II" id="document5" title="click here">Click here</a></td>
+        </tr>
+        <tr>
+            <td><label for="document6">Math II</label></td>
+            <td><a href="subject/MATH_II.pdf" download="Math II" id="document6" title="click here">Click here</a></td>
+        </tr>
+        </table>
+        </section>
+    </div>
+    <a href="#Project_7.html">click here</a>
+</body>
+</html>

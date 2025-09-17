@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Tag</title>
+</head>
+<body style="background-color: bisque;">
+   <form action="submit.php" method="post">
+    <p >Stuedent Name:</p>
+    First Name:<input type="text" placeholder="First Name" required> Middle Name: <input type="text" placeholder="Middle Name" > Last Name: <input type="text" placeholder="Last name" required>
+
+    <p>Father Name:</p>
+
+    First name: <input type="text" placeholder="First Name" required> Middle Name: <input type="text" placeholder="Middle Name"> Last Name: <input type="text" placeholder="Last Name">
+
+    <p>Gender:</p>
+
+    Male:       <input type="radio" name="Gender" value="male" required >
+    Female:     <input type="radio" name="Gender" value="Female" >
+    TransGender:<input type="radio" name="Gender" value="TransGender">
+
+    <p>Graduate</p>
+
+    Yes<input type="radio" name="Graduate" value="yes" required>
+    No <input type="radio" name="Graduate" value="No">
+
+    <p>Have You Aadhar?</p>
+
+    Yes<input type="radio" name="Aadhar" value="Yes" required>
+    No <input type="radio" name="Aadhar" value="No">
+
+    <p>Uplaod Aadhar</p>
+
+    Aadhar: <input type="file" required>
+
+    <p>Email</p>
+
+    Email:<input type="text" placeholder="xyz@gmail.com" required>
+    <p>Mobile No</p>
+
+    Mobile No:<input type="number" placeholder="Mobile number"required >  
+
+    <p>Date of Birth</p>
+
+     DOB: <input type="date" required>
+
+    <p>User Account</p>
+
+    <label for="UserName">UserName:</label>
+     <input type="text" placeholder="your Id" id="UserName" required><br>
+    <label for="password">Password:</label>
+    <input type="password" placeholder="password" id="password" required="true">
+
+     <p>Color</p>
+
+    Color: <input type="color"><br>
+    <label>Range:</label><br>
+    <input type="range"><br>
+
+    Checkbox:<br>
+
+    <label for="C">C</label>
+       <input type= "checkbox"  name="language" value="C" id="C" ><br>
+    <label for="Python">Python</label>
+        <input type="checkbox" name="language" value="Python" id="Python" ><br>
+    <label for="Java">Java</label>
+        <input type="checkbox" name="language" value="Java" id="Java" ><br>
+
+      <label for="country">Select:</label>
+      <select name="country" id="country">
+      <option value="Select">Select</option>
+      <option value="India">India</option>
+      <option value="USA">USA</option>
+      <option value="UK">UK</option>
+      <option value="Canada">Canada</option>
+      <option value="London">London</option>
+      <option value="Taiwan">Taiwan</option>
+      <option value="Russia">Russia</option>
+      <option value="Nepal">Nepal</option>
+      </select><br>
+      <label for="textarea">About Yourself:</label>
+      <textarea name=" write anything" placeholder="about Yourself" id="textarea" cols="30" rows="10">write a story for special person</textarea title="write about Yourself" ><br>
+    Button:<input type="button" value="Save"><br>
+    Submit:<input type="submit" value="submit">
+   </form>
+</body>
+</html>

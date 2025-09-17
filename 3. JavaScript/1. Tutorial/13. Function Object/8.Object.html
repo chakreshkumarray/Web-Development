@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Object</title>
+</head>
+<body>
+  <script>
+    let product={
+      company:"levi's",
+      Price: 2000,
+      Mfg:`01-01-2003`,
+    };
+    console.log(product);
+     console.log(product.company);
+     console.log(product.Mfg);
+     // Update Something   , dot notation
+     product.company="sparky";
+     console.log(product)
+     product.Price=5000;
+     console.log(product.Price)
+
+
+    //  Bracket Notation
+     product.company="Nike";
+     console.log(product["company"]);
+
+    // // delete 
+     delete product.company;
+     console.log(product);
+
+     let PriceQuantity='Price'; // store recently used value
+     console.log(product[PriceQuantity]);
+
+     // Inside Object
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form id="loginForm">
+    <h1>Login</h1>
+    <label for="user">User</label>
+    <input type="email" placeholder="abc@gmail.com" id="user" required><br><br>
+    <label for="password">Password</label>
+    <input type="password" placeholder="Chak@5503" id="password" required><br><br>
+    <input type="submit" value="Login">
+  </form>
+
+  <script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) 
+    {
+      event.preventDefault();
+      alert('You are Successfully Logged In');
+    }
+    );
+  </script>
+</body>
+</html>

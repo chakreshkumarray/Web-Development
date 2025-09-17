@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break and Continue</title>
+</head>
+<body>
+  <script>
+      /////// Break Statement
+   for(n=0;n<50;n++)
+   {
+    console.log(n)
+    if(n==30)
+   {
+    break;
+   }
+   }
+// exit whole loop
+    let arr=[12,85,21,27,26,84,45,23,56,84]
+    for(i=0;i<arr.length;i++)
+  {
+    if(arr[i]===27)
+  {
+    console.log(`Number found at index ${i}`);
+    break;
+  }
+    console.log('Searching next element till end')
+  }
+
+
+/// Continue statement  //  skip the sam iteration
+
+  for(j=1;j<=20;j++)
+  {
+    if(j%2==0)
+    {
+      continue;
+    }
+    console.log(j)
+  }
+  </script>
+</body>
+</html>

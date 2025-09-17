@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inside</title>
+</head>
+<body>
+  <script>
+    let product={
+      company:"Levi's",
+      itemName:'t-shirt Pant',
+      Price:2000,
+      rating:{
+        star:4.5,
+        review:500,
+      },
+      displayprice:function(){
+        console.log(`Price of this product is ${product.Price}`)
+        console.log(product);
+        console.log(product.rating);
+      }
+    };
+    product.displayprice();
+  </script>
+</body>
+</html>
