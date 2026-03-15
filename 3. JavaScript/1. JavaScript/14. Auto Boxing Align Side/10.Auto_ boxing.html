@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Boxing</title>
+</head>
+<body>
+
+  <script>
+    console.log('Chakresh kumar ray'.length);
+    console.log('Chakresh kumar ray'.toUpperCase());
+    console.log('Chakresh kumar ray'.replace('ray','anurag'));
+
+    //Object refrence
+    let a=5;
+    let b=a;
+    console.log(`a=${a},b=${b}`);
+    a=10;
+    console.log(`a=${a},b=${b}`);
+    
+    ///////
+    let x={num:5};
+    let y=x;
+    console.log(`x =${x.num},y=${x.num}`);
+    x.num=12;
+    console.log(`x=${x.num},y=${y.num}`);
+
+   // deep equal
+    let p={pop:`chakresh`};
+    let q={pop:`chakresh`};
+    console.log(p==q);
+
+
+    //object shortcuts
+    //De-Structuring
+
+    let product={
+      company:"Levi's",
+      itemName:'t-shirt Pant',
+      Price:2000,
+      rating:{
+        star:4.5,
+        review:500,
+      }
+    }
+    let{company,Price}=product;
+    console.log(company);
+    console.log(Price);
+    console.log(product);
+
+    // Property shorthand
+    let price=2000;
+    let product1={
+      company:"Jio",
+      itemName:'Rocky-tshirt',
+      price:price
+    };
+
+    // Same as
+   let product2={
+      company:"Jio",
+      itemName:'Rocky-tshirt',
+      price
+   };
+
+   // Method Shorthand
+
+   let product3={
+    company:'shoe',
+    itemName:'jocky',
+    displayPrice()
+    {
+      return`$${this.price.toFixed(2)}`;
+    }
+   }
+  </script>
+  
+</body>
+</html>

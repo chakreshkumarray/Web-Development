@@ -1,1 +1,11 @@
-1.
+1. Setup and extension
+i. JavaScript --> .js
+ii. console.log --> run on console
+iii Run code on VS terminal
+    version check --> node -v
+    run code --> node filename 
+
+2. Variable
+i. How Define constant
+   const
+

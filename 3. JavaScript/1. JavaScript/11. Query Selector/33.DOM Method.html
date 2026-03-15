@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Method</title>
+</head>
+<body>
+  <div class="my-button"> This is div</div>
+
+  <script>
+    let button=document.createElement('Button');          //by element
+    button.innerText='Click me'             // text
+    document.querySelector('.my-button').appendChild(button);         //add
+    document.querySelector('.my-button').removeChild(button);   //remove
+  </script>
+</body>
+</html>

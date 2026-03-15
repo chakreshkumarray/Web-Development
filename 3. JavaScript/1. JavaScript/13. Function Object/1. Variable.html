@@ -1,0 +1,48 @@
+
+<!-- variablre in  javascript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Variables</title>
+</head>
+<body>
+  <p id="name-display"></p>
+  <script>
+    let welcomeMessage = 'Hello Friends';
+    console.log('hello friends');
+    console.log(welcomeMessage);
+    let bagPrice = (15599 - (10/100 * 15599)) - 272;
+    let jeansPrice = (2499 - (41/100*2499)) - 29;
+    let bagValue = Math.round((jeansPrice + bagPrice + 25 + 20) * 118 / 100);
+    let bagSummary = `Your final Myntra Bag amount is ₹${bagValue}`;
+    console.log(bagSummary);
+
+    let a = 5;             // Update value
+    let b = 6;
+    let c = a + 4;
+    console.log(c);
+    c = b + 2;
+    console.log(c);
+
+
+    let i = 5;
+    console.log(i);
+    i = i + 5;
+    i += 5;
+    console.log(i);
+
+    const pi = 3.14159265359; // area of circle
+    let radius = 4;
+    // pi=2;
+    console.log(pi * radius * radius);
+
+    const myName=('Chakresh Kumar ray');
+    console.log(myName);
+
+    document.querySelector('#name-display').innerText=myName;
+
+    console.log(eval('2+3*8-4/6*31+716*94/15'))
+  </script>
+</body>
+</html>
