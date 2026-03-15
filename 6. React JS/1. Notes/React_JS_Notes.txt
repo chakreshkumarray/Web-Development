@@ -1,2 +1,12 @@
+1. React Roadmap --> Facebook
+
+i. build UI
+
+Q. Why React?
+ii. make easy to manage & build complex front-end
+
+Q. Problem in Facebook?
+iii. State --> JS & UI --> DOM
+
 1. Set Environmnent of React JS on VS code
 i. 
