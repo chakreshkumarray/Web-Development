@@ -1,0 +1,2 @@
+1. Set Environmnent of React JS on VS code
+i. 
