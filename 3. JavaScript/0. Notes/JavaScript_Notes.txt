@@ -1,11 +1,105 @@
-1. Setup and extension
+1. Setiing up Environment
+   --> install node js
 i. JavaScript --> .js
 ii. console.log --> run on console
+  --> show file - ls
+  --> open file - cd " file name " / cd "1. Setting up Enivronment"
 iii Run code on VS terminal
     version check --> node -v
-    run code --> node filename 
+    run code --> node filename / node 1_test.js
 
-2. Variable
-i. How Define constant
-   const
+2. Save and Work on Github
+i. Create a github Profile
+ii. create a punlic repository
+iii. Github use for version control on cloud provided by microsoft with vs code
+iv. Go on github then click codespaces then you can write code on github
 
+3. Let, Const, Var
+i. Let- access with in the scope, changeable
+ii. Const- no changeable
+iii. Var- changeable, accessable any where, Global variable, Function-scoped (not block-scoped), Can be redeclared and updated
+
+function test() {
+
+    // VAR
+    if (true) {
+        var a = 10;
+    }
+    console.log("var a:", a); // ✅ 10 (not block scoped)
+
+    // LET
+    if (true) {
+        let b = 20;
+        console.log("let b inside:", b); // ✅ 20
+    }
+    // console.log("let b outside:", b); ❌ ERROR (block scoped)
+
+    // CONST
+    const c = 30;
+    // c = 40; ❌ ERROR (cannot reassign)
+
+    console.log("const c:", c); // ✅ 30
+}
+
+test();
+
+4. Data Types and ECMA Standards
+"use strict"; // treat all JS code as newer version
+
+alert("CK")
+alert(3+2) // we are using node js not browser
+
+ECMA is a official javascript documentation --> https://tc39.es/ecma262/
+
+null -> object, standalone value,The Null type has exactly one value, called null.
+
+symbol -> unique, The Symbol type is the set of all non-String values that may be used as the key of an Object property
+
+undefined -> The Undefined type has exactly one value
+
+5. Data Type Conversion Confusion
+i. Number Conversion
+33 -> 33
+"Ck" -> NaN
+"33Ck" -> NaN
+true -> 1
+null -> 0
+undefined -> NaN
+
+ii. Boolean Conversion
+1 -> true
+0 -> false
+"" -> false
+"Chakresh" -> true
+
+iii. String Conversion
+33 -> String
+
+6. Why String to Number
+i. Number Operation
+console.log(a + b)
+ +, -, *, /, %
+ii. Add String
+iii. Tricky Conversion
+Prefix - increment, decrement
+PostFix - incremenr, decrement
+
+7. Comparison of Data Types
+greater than, less than, equal - true / false
+>, <, >=, <=, ==, !=, ~
+console.log("2" > 1); // true
+console.log("02" > 1); // true
+
+console.log(null > 0); // false
+console.log(null == 0); // false
+console.log(null >= 0); // true
+
+console.log(undefined == 0); // false
+console.log(undefined > 0); // false
+console.log(undefined < 0); // false
+
+console.log("2" === 2); // false
+
+8. Data Types Summary
+Primitive Data type -
+Non Primitive Data Type -
