@@ -101,5 +101,177 @@ console.log(undefined < 0); // false
 console.log("2" === 2); // false
 
 8. Data Types Summary
-Primitive Data type -
+Primitive Data type - 
+ * String,
+ * Number,
+ * Boolean,
+ * null,
+ * undefined,
+ * symbol,
+ * BigInt
 Non Primitive Data Type -
+Array,
+Objects,
+Functions,
+
+console.log(id === anotherId); // Reference Check
+
+console.log(typeof outsideTemp); // Object
+
+9. Stack and Heap Memory
+Stack - Compile time -> Primitive type 
+Heap - Run time -> Non Primitive type
+
+10. String in JavaScript
+const gameName = new String('Chakresh') undefined-> on console serach engine / object-> tyepof on vs code
+length, 
+charAt(1), 
+upperCase, 
+access[0], 
+__proto__ -> find first character
+indexOf, 
+substring-> ignore negative value, 
+slice, 
+trim()-> remove space
+replace-> const url = "https://chakresh.com/kumar%20ray" --> url.replace('%20','-')
+
+11. Number and Math
+Number-> toString().length, toString(), length, toFixed, toPrecision,toLocaleString('en-IN')
+Math-> log, abs, round, ceil, floor, min, max, random
+
+12. Date and Time
+Date-> new Date(), toString, toDateString, toLocalString, typeOf->Object
+Time-> Date.now(), getDate, getMonth, getDay, 
+
+13. Array
+const myArr = [4,5,6,4,6,4,6]
+Type -> Object,
+Resizeable
+Shallow copy --> A shallow copy of an object is a copy whose properties share the same references 
+                (point to the same underlying values) as those of the source object from which the copy was made.
+Deep copy --> A deep copy of an object is a copy whose properties do not share the same references 
+                (point to the same underlying values) as those of the source object from which the copy was made.
+
+method -> push -> add element, 
+pop-> remove element, 
+shift->shift() in JavaScript removes and returns the first element of an array (modifying the original array)., 
+unshift-> unshift() in JavaScript adds one or more elements to the beginning of an array and returns the new length., 
+slice -> give interveral array, 
+splice->manipulate original array, 
+includes-> includes() in JavaScript checks if an array or string contains a specified value and returns true or false., 
+indexOf-> Find element on the given index
+flash ->
+flat -> sub array merge in single array
+from --> console.log(Array.from({name: "Chakresh"})); // interview important to check this is array returns
+Array.of ---> add multiple variable in single array
+
+14. Objects
+const mySym = Symbol("key1") // interview important
+
+const JsUser = {
+  "Full name": "Chakresh Kumar",
+  [mySym]: "mykey1",         // interview important      
+  age: 23,
+  location: "Pune",
+  email: "chakresh@google.com",
+  isLoggedIn: false,
+  lastLoginDays:["Monday","Saturday"]
+}
+
+// Access
+console.log(JsUser.email);
+console.log(JsUser["email"]);
+console.log(JsUser[mySym]);   // interview important
+// override value
+JsUser.email = "ChakreshRay@gmail.com"
+//Object.freeze(JsUser) // don't override value
+
+--------------
+Tinder User
+const
+const tinderUser = {}
+
+tinderUser.id = "123abc"
+tinderUser.name = "Sammy"
+tinderUser.isLoggedIn = false
+
+console.log(tinderUser);
+
+const regularUser = {
+    email: "some@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname: "Chakresh",
+            lastname: "Kumar"
+        }
+    }
+}
+
+console.log(regularUser.fullname.userfullname.firstname);
+
+-----------
+Object API
+-----------
+
+
+// JSON is same like Object
+// {
+//   "name": "Chakresh",
+//   "coursename":"JS in hindi",
+//   "price": "free"
+// }
+
+[
+  {},
+  {},
+  {}
+]
+
+-----  JSON vs Object -----
+1. JSON is string format, Object is not.
+2. JSON keys must be in double quotes, Object keys can be without quotes.
+3. JSON does not support functions, Object can have functions as values.
+
+
+15. Functions
+
+// Functions is a keyword in JavaScript that allows us to define reusable blocks of code. 
+Functions can take parameters, which are values that we can pass into the function to customize its behavior.
+
+// Here is an example of a simple function that takes two parameters and returns their sum:
+
+function myName(){
+console.log("C");
+console.log("H");
+console.log("A");
+console.log("K");
+console.log("R");
+console.log("E");
+console.log("S");
+console.log("H");
+}
+
+myName(); // This will call the function and execute the code inside it, printing each letter of "CHAKRESH" on a new line.
+
+// We can also define a function that takes parameters and returns a value.
+
+--- Function with Object----
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500, 2000)) --> Output 500, 2000
+
+16. Local scope and Global Scope
+Local Scope-> same curly brackets
+Gloabl Scope-> over the function
+
+17. This Function and Arrow Function
+this -> reference of current object
+Arrow -> more concise syntax for writing function expressions.
+
+18. Immediately Invoked Function
+//  IIFE is a JavaScript function that runs as soon as it is defined. It is a design pattern 
+    which produces a lexical scope using JavaScript's function scoping. This helps to avoid polluting
+    the global namespace and can be used to create private variables and functions.
+
