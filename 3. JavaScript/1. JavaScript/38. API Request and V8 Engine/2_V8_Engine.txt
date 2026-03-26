@@ -1,0 +1,4 @@
+V8 --> provide debugging tool to run javascript
+   --> console.log
+   --> Api access
+   --> javascript wrapped on C++
