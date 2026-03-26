@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Selector</title>
+  <style>
+    .bg-black{
+      background-color: #212121;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <div >
+    <h1 id = "title" class="heading">DOM Selector</h1>
+    <h2>Lorem, ipsum dolor sit amet conse</h2>
+    <h2>Lorem, ipsum dolor sit amet conse</h2>
+    <h2>Lorem ipsum dolor sit amet, conse</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, tenetur voluptatem? Qui</p>
+    <input type="password" name="" id="">
+
+    <ul>
+      <li class="list-item">one</li>
+      <li class="list-item">two</li>
+      <li class="list-item">three</li>
+      <li class="list-item">four</li>
+    </ul>
+
+  </div>
+</body>
+</html>
+
+<!--
+
+🔹 1. Basic Selectors
+
+document.querySelector("#id")          // Select by ID
+document.querySelector(".class")       // Select first element with class
+document.querySelector("div")          // Select first <div>
+document.querySelectorAll(".class")    // Select all elements with class
+
+🔹 2. Multiple Selectors
+
+document.querySelector("h1, p, .box")  // First matching h1 OR p OR .box
+document.querySelectorAll("div, span") // All divs and spans
+
+🔹 3. Descendant Selector (Inside Element)
+
+document.querySelector("div p")        // <p> inside <div>
+document.querySelector(".container .item")
+
+🔹 4. Direct Child Selector (>)
+
+document.querySelector("ul > li")      // Direct child <li> of <ul>
+
+🔹 5. Attribute Selectors ⭐ (VERY IMPORTANT)
+
+document.querySelector('[type="text"]')     // input type="text"
+document.querySelector('[name="email"]')
+document.querySelector('[data-id="123"]')
+document.querySelectorAll('a[target="_blank"]')
+
+🔹 6. Starts / Ends / Contains Attribute
+
+document.querySelector('[class^="btn"]')   // starts with "btn"
+document.querySelector('[class$="active"]')// ends with "active"
+document.querySelector('[class*="card"]')  // contains "card"
+
+🔹 7. Pseudo-classes (🔥 Most Useful)
+
+document.querySelector("li:first-child")
+document.querySelector("li:last-child")
+document.querySelector("li:nth-child(2)")
+document.querySelector("li:nth-child(even)")
+document.querySelector("input:checked")
+document.querySelector("input:disabled")
+
+🔹 8. Not Selector
+
+document.querySelector("div:not(.hidden)")
+
+🔹 9. Nested Query (Best Practice)
+
+const parent = document.querySelector(".container");
+parent.querySelector(".child");
+
+🔹 10. Loop Through Multiple Elements
+
+document.querySelectorAll(".item").forEach(el => {
+    el.style.color = "red";
+});
+
+🔹 11. Closest (🔥 Interview Favorite)
+
+element.closest(".parent")  // Finds nearest parent
+
+🔹 12. Sibling Selection
+
+element.nextElementSibling
+element.previousElementSibling
+
+🔹 13. Query Inside Forms
+
+document.querySelector("form input[name='username']")
+
+🔹 14. Dynamic Selector (Very Practical)
+
+const id = "user1";
+document.querySelector(`#${id}`);
+
+🔹 15. Check Existence (Important for Safety)
+
+const el = document.querySelector(".box");
+if (el) {
+    console.log("Element exists");
+}
+
+document.getElementByClassName("")
+
+
+-->
