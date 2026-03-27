@@ -1,4 +1,5 @@
-1. React Roadmap --> Facebook
+1. React Roadmap --
+--> Build Facebook
 
 i. build UI
 
@@ -8,5 +9,44 @@ ii. make easy to manage & build complex front-end
 Q. Problem in Facebook?
 iii. State --> JS & UI --> DOM
 
-1. Set Environmnent of React JS on VS code
-i. 
+1. Set Environment of React JS on VS code
+i.React is Library -->
+
+Topic to Learn
+i. Core of react (state or UI, manipulation, JSX)
+ii. Component Resuability
+iii. Reusing of Component.
+iv. How to propagate change(hooks) --> use states, use affect -- > SPA (Single Page Application) No Page Reload --> Use Manipulation.
+
+2. Additional Addon to React
+i. Router (React don't have Router)
+ii. State Management (React don't have state Management) --> use by library --> JS--> library --> redux
+   --> Redux, Redux toolkit, zustand, context API --> these provide hooks.
+iv. Class based component
+   --> Legacy code
+v. BAAS(Backend as a Service) Apps
+   --> Social media clone, e-commerce App...,
+  ---> App right
+ ---> firebase
+----> super base
+
+v. After React
+--> Next JS
+--> Gatsby
+--> Remix
+
+1. Create React Project
+
+React
+React-DOM-> Web
+React-Native -> Mobile
+
+npx / npm --> node package manager
+create-react-app --> utility --> software
+npx create-react-app --> old method
+package,json--> entry point of react js --> provided some script to help run code or build UI
+vite is a bundler
+
+--> npm create vite@latest
+-- npm install --> node_modules
+--> npm run dev
