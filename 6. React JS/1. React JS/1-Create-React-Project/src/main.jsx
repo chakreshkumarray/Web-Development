@@ -9,16 +9,18 @@ createRoot(document.getElementById('root')).render(
   </StrictMode>,
 )
 
-// React
-// React-DOM-> Web
-// React-Native -> Mobile
+/*
+React
+React-DOM-> Web
+React-Native -> Mobile
 
-// npx / npm --> node package manager
-// create-react-app --> utility --> software
-// npx create-react-app --> old method
-// package,json--> entry point of react js --> provided some script to help run code or build UI, debugger, console, vite version, react, kernal
-// vite is a bundler
+npx / npm --> node package manager
+create-react-app --> utility --> software
+npx create-react-app --> old method
+package,json--> entry point of react js --> provided some script to help run code or build UI, debugger, console, vite version, react, kernal
+vite is a bundler
 
-// --> npm create vite@latest
-// -- npm install --> node_modules
-// --> npm run dev
+--> npm create vite@latest
+-- npm install --> node_modules
+--> npm run dev
+*/
