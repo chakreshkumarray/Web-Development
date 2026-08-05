@@ -50,3 +50,6 @@ vite is a bundler
 --> npm create vite@latest
 -- npm install --> node_modules
 --> npm run dev
+
+Lecture 4 Custom React Your Own React
+Mini Project Type
