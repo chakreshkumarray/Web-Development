@@ -2,7 +2,7 @@
 function App() {
   return (
     <h1>Chakresh Kumar Ray | Vite + React</h1>
-  )
+  );
 }
 
 export default App
