@@ -17,3 +17,9 @@ createRoot(document.getElementById('root')).render(
     <MyApp/>
   </StrictMode>,
 )
+
+/*
+
+--> In React JSX html used and in backend html convert in js object and then render in browser.
+
+*/
