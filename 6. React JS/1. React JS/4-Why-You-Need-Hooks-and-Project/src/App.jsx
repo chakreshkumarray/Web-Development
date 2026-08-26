@@ -14,26 +14,33 @@ function App() {
   const addValue = () => {
     //console.log("Add Value", Math.random());
     //counter = counter + 1
-    setCounter(counter + 1)
+    if(counter < 20){
+      setCounter(counter + 1)
+    }  else{
+      console.log("Not greter than 20")
+    }
   }
 
   const removeValue = () => {
-    setCounter(counter - 1)
-    if(counter == 0){
-      console.log("Negative no Allow")
+   if (counter > 0) {
+      setCounter(counter - 1)
+    }  else {
+      console.log("Negative number not allowed")
     }
-    
   }
 
   return (
    <>
-   <h1> Chai aur Code</h1>
+   <h1> Chakresh aur Code</h1>
    <h2> Counter Value: {counter}</h2>
 
    <button onClick = {addValue}> Add Value {counter}</button>
    <br></br>
+
    <button onClick = {removeValue}> Remove Value {counter}</button> 
+
    <p></p>
+
    <footer>footer:{counter}</footer>
    </>
   )
