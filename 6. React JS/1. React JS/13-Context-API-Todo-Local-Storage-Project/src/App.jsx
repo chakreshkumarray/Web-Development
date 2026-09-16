@@ -38,7 +38,8 @@ function App() {
   }, [])
 
   useEffect(() => {
-    localStorage.setItem("todos", JSON.stringify(todos))
+    localStorage.setItem("todos", JSON.stringify(todos)) 
+    // Stringify --> Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
   }, [todos])
   
 
