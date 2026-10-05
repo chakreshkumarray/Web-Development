@@ -36,7 +36,7 @@ Virtual DOM, Fibre,difing algo, hydration
 
 Topic to Learn
 
--> coree of react ( State or UI manipulation, JSX)
+-> core of react ( State or UI manipulation, JSX)
 -> Resuing of components (props)
 -> How to propagate change(hooks)
 -> SPA
